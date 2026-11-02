@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SYNTHETIC test fixture: hand-written, no real patient data. Exercises the
+     vendor variations seen in the exam C-CDAs (codes in translations, names
+     only in narrative references, nullFlavor codes, placeholder rows). -->
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2015-08-01"/>
+  <id root="2.16.840.1.113883.19" extension="DOC-1"/>
+  <code code="34133-9" codeSystem="2.16.840.1.113883.6.1" displayName="Summarization of Episode Note"/>
+  <title>Test CCD</title>
+  <effectiveTime value="20230615103000-0500"/>
+  <recordTarget><patientRole><addr><state>IL</state></addr><patient>
+    <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1"/>
+    <birthTime value="19700102"/>
+  </patient></patientRole></recordTarget>
+  <author><time value="20230615"/><assignedAuthor><assignedAuthoringDevice>
+    <softwareName>TestEHR</softwareName></assignedAuthoringDevice></assignedAuthor></author>
+  <component><structuredBody>
+    <!-- Medications: identified by LOINC code only (no templateId) -->
+    <component><section>
+      <code code="10160-0" codeSystem="2.16.840.1.113883.6.1"/>
+      <text><table><tbody>
+        <tr><td ID="med1">Atorvastatin 20 mg tablet</td></tr>
+        <tr><td ID="med2">Ergocalciferol 50,000 unit capsule</td></tr>
+        <tr><td ID="sig1">Take 1 tablet nightly</td></tr>
+      </tbody></table></text>
+      <!-- 1: RxNorm primary + hyphenated NDC translation -->
+      <entry><substanceAdministration classCode="SBADM" moodCode="INT">
+        <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+        <id root="1.2.3" extension="m1"/>
+        <statusCode code="Active"/>
+        <effectiveTime xsi:type="IVL_TS"><low value="20220110"/><high nullFlavor="NI"/></effectiveTime>
+        <effectiveTime xsi:type="PIVL_TS" operator="A"><period value="24" unit="h"/></effectiveTime>
+        <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Oral"/>
+        <doseQuantity value="1" unit="{tbl}"/>
+        <consumable><manufacturedProduct><manufacturedMaterial>
+          <code code="617310" codeSystem="2.16.840.1.113883.6.88" displayName="atorvastatin 20 MG Oral Tablet">
+            <originalText><reference value="#med1"/></originalText>
+            <translation code="0071-0155-23" codeSystem="2.16.840.1.113883.6.69"/>
+          </code>
+        </manufacturedMaterial></manufacturedProduct></consumable>
+        <entryRelationship typeCode="COMP"><substanceAdministration classCode="SBADM" moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.22.4.147"/>
+          <text><reference value="#sig1"/></text>
+          <consumable><manufacturedProduct><manufacturedLabeledDrug nullFlavor="NA"/></manufacturedProduct></consumable>
+        </substanceAdministration></entryRelationship>
+      </substanceAdministration></entry>
+      <!-- 2: nullFlavor code, name only via narrative reference -->
+      <entry><substanceAdministration classCode="SBADM" moodCode="EVN">
+        <statusCode code="completed"/>
+        <effectiveTime xsi:type="IVL_TS"><low value="2021-03-21 08:26:00"/><high value="202106"/></effectiveTime>
+        <consumable><manufacturedProduct><manufacturedMaterial>
+          <code nullFlavor="OTH"><originalText><reference value="#med2"/></originalText>
+            <translation code="UNK" codeSystemName="UNK"/></code>
+        </manufacturedMaterial></manufacturedProduct></consumable>
+      </substanceAdministration></entry>
+      <!-- 3: placeholder row -->
+      <entry><substanceAdministration classCode="SBADM" moodCode="EVN">
+        <consumable><manufacturedProduct><manufacturedMaterial>
+          <code nullFlavor="NI"/><name>No data available for this section</name>
+        </manufacturedMaterial></manufacturedProduct></consumable>
+      </substanceAdministration></entry>
+    </section></component>
+    <!-- Problems: identified by templateId -->
+    <component><section>
+      <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+      <code code="11450-4" codeSystem="2.16.840.1.113883.6.1"/>
+      <text><content ID="prob2">Essential hypertension</content></text>
+      <!-- 1: SNOMED with ICD-10-CM translation and status observation -->
+      <entry><act classCode="ACT" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+        <id root="1.2.3" extension="c1"/>
+        <statusCode code="active"/>
+        <effectiveTime><low value="20200301"/></effectiveTime>
+        <entryRelationship typeCode="SUBJ"><observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+          <id root="1.2.3" extension="o1"/>
+          <code code="55607006" codeSystem="2.16.840.1.113883.6.96" displayName="Problem"/>
+          <effectiveTime><low value="20200301"/></effectiveTime>
+          <value xsi:type="CD" code="44054006" codeSystem="2.16.840.1.113883.6.96" displayName="Type 2 diabetes mellitus">
+            <translation code="E11.9" codeSystem="2.16.840.1.113883.6.90" displayName="Type 2 diabetes mellitus without complications"/>
+          </value>
+          <entryRelationship typeCode="REFR"><observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+            <code code="33999-4" codeSystem="2.16.840.1.113883.6.1"/>
+            <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96"/>
+          </observation></entryRelationship>
+        </observation></entryRelationship>
+      </act></entry>
+      <!-- 2: SNOMED only, name via originalText reference -->
+      <entry><act classCode="ACT" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+        <statusCode code="completed"/>
+        <effectiveTime><low value="2015"/><high value="20190101"/></effectiveTime>
+        <entryRelationship typeCode="SUBJ"><observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+          <code code="64572001" codeSystem="2.16.840.1.113883.6.96"/>
+          <effectiveTime><low value="2015"/><high value="20190101"/></effectiveTime>
+          <value xsi:type="CD" code="59621000" codeSystem="2.16.840.1.113883.6.96">
+            <originalText><reference value="#prob2"/></originalText>
+          </value>
+        </observation></entryRelationship>
+      </act></entry>
+      <!-- 3: placeholder -->
+      <entry><act classCode="ACT" moodCode="EVN"><entryRelationship typeCode="SUBJ">
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+          <value xsi:type="CD" nullFlavor="NI"/>
+        </observation></entryRelationship></act></entry>
+    </section></component>
+  </structuredBody></component>
+</ClinicalDocument>

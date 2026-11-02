@@ -1,0 +1,3001 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdtc="urn:hl7-org:sdtc" xsi:schemaLocation="urn:hl7-org:v3 ../../../CDA%20R2/cda-schemas-and-samples/infrastructure/cda/CDA.xsd" classCode="DOCCLIN" moodCode="EVN">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.2"/>
+  <id root="2.16.840.1.113883.3.996.1.4.999362" extension="596934406"/>
+  <code code="34133-9" codeSystem="2.16.840.1.113883.6.1" displayName="Summarization of Episode Note"/>
+  <title>Transition of Care/Referral Summary</title>
+  <effectiveTime value="20220215041352"/>
+  <confidentialityCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.5.25"/>
+  <languageCode code="en-US"/>
+  <recordTarget typeCode="RCT" contextControlCode="OP">
+    <patientRole classCode="PAT">
+      <id root="2.16.840.1.113883.3.996.2.1.1" extension="6113984" assigningAuthorityName="iar JgF Xpb Oski"/>
+      <addr use="HP">
+        <streetAddressLine>851 Michael Path Suite 092</streetAddressLine>
+        <city>Westover</city>
+        <state>PA</state>
+        <postalCode>16692</postalCode>
+        <country>US</country>
+      </addr>
+      <telecom use="HP" value="+1-3178813558"/>
+      <telecom value="+1-9362382794"/>
+      <patient classCode="PSN" determinerCode="INSTANCE">
+        <name use="L">
+          <given>Jessica</given>
+          <given>Jennifer</given>
+          <family>Sanchez</family>
+        </name>
+        <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="administrativeGender" displayName="Female">
+          <originalText>Female</originalText>
+        </administrativeGenderCode>
+        <birthTime value="19510730"/>
+        <maritalStatusCode code="D" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatus" displayName="Divorced">
+          <originalText>Divorced</originalText>
+        </maritalStatusCode>
+        <religiousAffiliationCode code="1064" codeSystem="2.16.840.1.113883.5.1076" codeSystemName="ReligiousAffiliation" displayName="Church of Christ">
+          <originalText>Church of Christ</originalText>
+        </religiousAffiliationCode>
+        <raceCode code="2054-5" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race and Ethnicity - CDC" displayName="Black or African American">
+          <originalText>Black or African American</originalText>
+        </raceCode>
+        <sdtc:raceCode code="2058-6" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race and Ethnicity - CDC" displayName="Black or African American">
+          <originalText>Black or African American</originalText>
+        </sdtc:raceCode>
+        <ethnicGroupCode code="2186-5" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race and Ethnicity - CDC" displayName="Not Hispanic or Latino"/>
+        <languageCommunication>
+          <languageCode code="eng"/>
+        </languageCommunication>
+      </patient>
+      <providerOrganization>
+        <id root="7.79.617.1.830069.1.726.9.7"/>
+        <name>Perezland</name>
+        <telecom use="WP" value="+1-1792778807"/>
+        <addr use="WP">
+          <streetAddressLine>84676 Eric Islands</streetAddressLine>
+          <city>Frohna</city>
+          <state>MO</state>
+          <postalCode>63748</postalCode>
+          <country>US</country>
+        </addr>
+      </providerOrganization>
+    </patientRole>
+  </recordTarget>
+  <author typeCode="AUT" contextControlCode="OP">
+    <time value="20220215041352"/>
+    <assignedAuthor classCode="ASSIGNED">
+      <id nullFlavor="NI"/>
+      <addr nullFlavor="NI"/>
+      <telecom nullFlavor="NI"/>
+      <assignedAuthoringDevice>
+        <manufacturerModelName>Cerner Corporation</manufacturerModelName>
+        <softwareName>Millennium Clinical Document Generator</softwareName>
+      </assignedAuthoringDevice>
+      <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+        <id root="6.32.896.6.331222.5.315.1.5"/>
+        <name>Perezland</name>
+        <telecom use="WP" value="+1-1792778807"/>
+        <addr use="WP">
+          <streetAddressLine>84676 Eric Islands</streetAddressLine>
+          <city>Frohna</city>
+          <state>MO</state>
+          <postalCode>63748</postalCode>
+          <country>US</country>
+        </addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <custodian typeCode="CST">
+    <assignedCustodian classCode="ASSIGNED">
+      <representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+        <id root="5.25.623.1.622634.4.674.8.3"/>
+        <name>Perezland</name>
+        <telecom use="WP" value="+1-1792778807"/>
+        <addr use="WP">
+          <streetAddressLine>84676 Eric Islands</streetAddressLine>
+          <city>Frohna</city>
+          <state>MO</state>
+          <postalCode>63748</postalCode>
+          <country>US</country>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <documentationOf typeCode="DOC">
+    <serviceEvent classCode="PCPR" moodCode="EVN">
+      <effectiveTime>
+        <low value="20211229092657"/>
+        <high value="20220213235959"/>
+      </effectiveTime>
+      <performer typeCode="PRF">
+        <functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88" codeSystemName="HL7 ParticipationFunction" displayName="primary care physician"/>
+        <assignedEntity classCode="ASSIGNED">
+          <id root="2.16.840.1.113883.3.4.6" extension="1053680168" assigningAuthorityName="Jtc"/>
+          <addr use="WP">
+            <streetAddressLine>84676 Eric Islands</streetAddressLine>
+            <streetAddressLine>84676 Eric Islands</streetAddressLine>
+            <city>Frohna</city>
+            <state>MO</state>
+            <postalCode>63748</postalCode>
+            <country>US</country>
+          </addr>
+          <telecom use="WP" value="+1-8934502768"/>
+          <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+            <name>
+              <given>Anthony</given>
+              <given>Jodi</given>
+              <family>King</family>
+            </name>
+          </assignedPerson>
+        </assignedEntity>
+      </performer>
+    </serviceEvent>
+  </documentationOf>
+  <componentOf>
+    <encompassingEncounter>
+      <id root="2.16.840.1.113883.3.996.2.2.1" extension="62179376" assigningAuthorityName="kLo rdi FMU bWNT"/>
+      <effectiveTime>
+        <low value="20211229092657"/>
+        <high value="20220213235959"/>
+      </effectiveTime>
+      <dischargeDispositionCode nullFlavor="UNK">
+        <originalText>Home</originalText>
+      </dischargeDispositionCode>
+      <encounterParticipant typeCode="ADM">
+        <assignedEntity classCode="ASSIGNED">
+          <id root="2.16.840.1.113883.3.4.6" extension="6348715559" assigningAuthorityName="HHZ"/>
+          <addr use="WP">
+            <streetAddressLine>84676 Eric Islands</streetAddressLine>
+            <streetAddressLine>84676 Eric Islands</streetAddressLine>
+            <city>Frohna</city>
+            <state>MO</state>
+            <postalCode>63748</postalCode>
+            <country>US</country>
+          </addr>
+          <telecom use="WP" value="+1-7024883203"/>
+          <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+            <name>
+              <given>Alejandro</given>
+              <given>Micheal</given>
+              <family>Bell</family>
+            </name>
+          </assignedPerson>
+        </assignedEntity>
+      </encounterParticipant>
+      <encounterParticipant typeCode="ATND">
+        <assignedEntity classCode="ASSIGNED">
+          <id root="2.16.840.1.113883.3.4.6" extension="5481061184" assigningAuthorityName="ewj"/>
+          <addr use="WP">
+            <streetAddressLine>84676 Eric Islands</streetAddressLine>
+            <streetAddressLine>84676 Eric Islands</streetAddressLine>
+            <city>Frohna</city>
+            <state>MO</state>
+            <postalCode>63748</postalCode>
+            <country>US</country>
+          </addr>
+          <telecom use="WP" value="+1-7024883203"/>
+          <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+            <name>
+              <given>Alejandro</given>
+              <given>Micheal</given>
+              <family>Bell</family>
+            </name>
+          </assignedPerson>
+        </assignedEntity>
+      </encounterParticipant>
+      <encounterParticipant typeCode="REF">
+        <assignedEntity classCode="ASSIGNED">
+          <id root="2.16.840.1.113883.3.4.6" extension="5310032327" assigningAuthorityName="ZQX"/>
+          <addr use="WP">
+            <streetAddressLine>84676 Eric Islands</streetAddressLine>
+            <streetAddressLine>84676 Eric Islands</streetAddressLine>
+            <city>Frohna</city>
+            <state>MO</state>
+            <postalCode>63748</postalCode>
+            <country>US</country>
+          </addr>
+          <telecom use="WP" value="+1-7024883203"/>
+          <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+            <name>
+              <given>Alejandro</given>
+              <given>Micheal</given>
+              <family>Bell</family>
+            </name>
+          </assignedPerson>
+        </assignedEntity>
+      </encounterParticipant>
+      <location typeCode="LOC">
+        <healthCareFacility classCode="SDLOC">
+          <location classCode="PLC" determinerCode="INSTANCE">
+            <name>Perezland</name>
+            <addr use="WP">
+              <streetAddressLine>84676 Eric Islands</streetAddressLine>
+              <city>Frohna</city>
+              <state>MO</state>
+              <postalCode>63748</postalCode>
+              <country>US</country>
+            </addr>
+          </location>
+        </healthCareFacility>
+      </location>
+    </encompassingEncounter>
+  </componentOf>
+  <component typeCode="COMP">
+    <structuredBody classCode="DOCBODY" moodCode="EVN">
+      <component typeCode="COMP" contextConductionInd="true">
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.22.1"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.22"/>
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of hospitalizations+History of outpatient visits"/>
+          <title>Encounter</title>
+          <text><paragraph ID="ENCOUNTER56164884"><content styleCode="Bold">MHM Fin Nbr Pool 65404445 Date(s): 2021-12-29 - 2022-02-13</content>
+
+Perezland 7691 Poplar Ave. Perezland, TN 36877 USA (901) 516-6418
+
+<content ID="ENCNTRDDP56164884">Discharge Disposition: Home</content>
+
+Attending Physician: Edwards , Alejandro, MD
+
+Admitting Physician: Edwards , Alejandro, MD
+
+Referring Physician: Edwards , Alejandro, MD
+
+</paragraph></text>
+          <entry>
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+              <id root="2.16.840.1.113883.3.996.2.2.1" extension="02077476" assigningAuthorityName="rzw qsM qfp aqUq"/>
+              <code nullFlavor="UNK">
+                <originalText>Prereg</originalText>
+              </code>
+              <effectiveTime>
+                <low value="20211229092657"/>
+                <high value="20220213235959"/>
+              </effectiveTime>
+              <sdtc:dischargeDispositionCode nullFlavor="UNK">
+                <originalText>
+                  <reference value="#ENCNTRDDP56164884"/>
+                </originalText>
+              </sdtc:dischargeDispositionCode>
+              <performer>
+                <assignedEntity classCode="ASSIGNED">
+                  <id root="2.16.840.1.113883.3.4.6" extension="1006886597" assigningAuthorityName="NzX"/>
+                  <addr use="WP">
+                    <streetAddressLine>84676 Eric Islands</streetAddressLine>
+                    <streetAddressLine>84676 Eric Islands</streetAddressLine>
+                    <city>Frohna</city>
+                    <state>MO</state>
+                    <postalCode>63748</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="WP" value="+1-7024883203"/>
+                  <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                    <name>
+                      <given>Alejandro</given>
+                      <given>Micheal</given>
+                      <family>Bell</family>
+                    </name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <performer>
+                <assignedEntity classCode="ASSIGNED">
+                  <id root="2.16.840.1.113883.3.4.6" extension="4080368197" assigningAuthorityName="Biq"/>
+                  <addr use="WP">
+                    <streetAddressLine>84676 Eric Islands</streetAddressLine>
+                    <streetAddressLine>84676 Eric Islands</streetAddressLine>
+                    <city>Frohna</city>
+                    <state>MO</state>
+                    <postalCode>63748</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="WP" value="+1-7024883203"/>
+                  <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                    <name>
+                      <given>Alejandro</given>
+                      <given>Micheal</given>
+                      <family>Bell</family>
+                    </name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <performer>
+                <assignedEntity classCode="ASSIGNED">
+                  <id root="2.16.840.1.113883.3.4.6" extension="6529521348" assigningAuthorityName="SbM"/>
+                  <addr use="WP">
+                    <streetAddressLine>84676 Eric Islands</streetAddressLine>
+                    <streetAddressLine>84676 Eric Islands</streetAddressLine>
+                    <city>Frohna</city>
+                    <state>MO</state>
+                    <postalCode>63748</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="WP" value="+1-7024883203"/>
+                  <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                    <name>
+                      <given>Alejandro</given>
+                      <given>Micheal</given>
+                      <family>Bell</family>
+                    </name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
+                  <code nullFlavor="NI"/>
+                  <addr use="WP">
+                    <streetAddressLine>84676 Eric Islands</streetAddressLine>
+                    <city>Frohna</city>
+                    <state>MO</state>
+                    <postalCode>63748</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="WP" value="+1-7330115531"/>
+                  <playingEntity classCode="PLC">
+                    <name>Perezland</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component typeCode="COMP" contextConductionInd="true">
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.9"/>
+          <code code="51847-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Assessment and Plan"/>
+          <title>Assessment and Plan</title>
+          <text><paragraph>No data available for this section</paragraph></text>
+        </section>
+      </component>
+      <component typeCode="COMP" contextConductionInd="true">
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.4"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.4.1"/>
+          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital Signs"/>
+          <title>Vital Signs</title>
+          <text><paragraph>No data available for this section</paragraph></text>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <organizer classCode="CLUSTER" moodCode="EVN" nullFlavor="NI">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+              <id root="6436k7y1-3vb7-359Q-sSI3-7393519D7M12"/>
+              <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Vital Signs"/>
+              <statusCode nullFlavor="UNK"/>
+              <effectiveTime nullFlavor="NI"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <id root="1G54jH74-6780-03R5-8i73-137n63754803"/>
+                  <code nullFlavor="NI"/>
+                  <statusCode nullFlavor="UNK"/>
+                  <effectiveTime nullFlavor="NI"/>
+                  <value xsi:type="CD" nullFlavor="NI"></value>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component typeCode="COMP" contextConductionInd="true">
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.5"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
+          <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" displayName="Problem List" codeSystemName="LOINC"/>
+          <title>Problem List</title>
+          <text><table border="1" width="95%"><colgroup><col width="20%"/><col width="20%"/><col width="20%"/><col width="20%"/><col width="20%"/></colgroup><thead><tr><th>Condition</th><th>Effective Dates</th><th>Status</th><th>Health Status</th><th>Informant</th></tr></thead><tbody><tr><td><content ID="PROBLEM65862811">Obesity(<content ID="CON65862811">Confirmed</content>)</content></td><td> </td><td><content ID="PROBST65862811">Active</content></td><td><content ID="PROBHST65862811"> </content></td><td> </td></tr><tr><td><content ID="PROBLEM90584251">S/P total knee replacement(<content ID="CON90584251">Confirmed</content>)<sup>1</sup></content></td><td> </td><td><content ID="PROBST90584251">Active</content></td><td><content ID="PROBHST90584251"> </content></td><td> </td></tr></tbody></table><paragraph><sup>1</sup><content ID="PROBCMT90584255">Added by rule when the Add to Problem order is placed</content></paragraph></text>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+              <id root="1l55WN9U-F9k7-96lB-qY4w-Ww47n9874285"/>
+              <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern" codeSystemName="HL7ActClass"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low nullFlavor="NI"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                  <id root="95873688-56UK-1lT8-788i-68589h8q72x4"/>
+                  <code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <text><reference value="#PROBLEM65862811"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low nullFlavor="NI"/>
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="414916001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Obesity (disorder)">
+                    <originalText>
+                      <reference value="#PROBLEM65862811"/>
+                    </originalText>
+                  </value>
+                  <author>
+                    <time value="20190817112058"/>
+                    <assignedAuthor classCode="ASSIGNED">
+                      <id nullFlavor="NI"/>
+                      <addr nullFlavor="UNK">
+                        <streetAddressLine nullFlavor="NI"/>
+                        <city nullFlavor="NI"/>
+                        <country nullFlavor="NI"/>
+                      </addr>
+                      <assignedPerson>
+                        <name>
+                          <given nullFlavor="NA"/>
+                          <family nullFlavor="NA"/>
+                        </name>
+                      </assignedPerson>
+                    </assignedAuthor>
+                  </author>
+                  <entryRelationship typeCode="REFR">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <text><reference value="#PROBST65862811"/></text>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                        <originalText>
+                          <reference value="#PROBST65862811"/>
+                        </originalText>
+                      </value>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+              <id root="6062xP1q-0G23-7037-I2d1-r3qi3443w5e2"/>
+              <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern" codeSystemName="HL7ActClass"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low nullFlavor="NI"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                  <id root="aJ839250-p2z4-4g0q-Nu6J-cC96ws2Ab6k5"/>
+                  <code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <text><reference value="#PROBLEM90584251"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low nullFlavor="NI"/>
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="1211000119105" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="History of total knee arthroplasty (situation)">
+                    <originalText>
+                      <reference value="#PROBLEM90584251"/>
+                    </originalText>
+                  </value>
+                  <author>
+                    <time value="20210410172205"/>
+                    <assignedAuthor classCode="ASSIGNED">
+                      <id nullFlavor="NI"/>
+                      <addr nullFlavor="UNK">
+                        <streetAddressLine nullFlavor="NI"/>
+                        <city nullFlavor="NI"/>
+                        <country nullFlavor="NI"/>
+                      </addr>
+                      <assignedPerson>
+                        <name>
+                          <given nullFlavor="NA"/>
+                          <family nullFlavor="NA"/>
+                        </name>
+                      </assignedPerson>
+                    </assignedAuthor>
+                  </author>
+                  <entryRelationship typeCode="REFR">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <text><reference value="#PROBST90584251"/></text>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                        <originalText>
+                          <reference value="#PROBST90584251"/>
+                        </originalText>
+                      </value>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true" contextConductionInd="true">
+                    <act classCode="ACT" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.64"/>
+                      <code code="48767-8" displayName="Annotation comment" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                      <text><reference value="#PROBCMT90584255"/></text>
+                      <author typeCode="AUT">
+                        <time value="20210410172205"/>
+                        <assignedAuthor classCode="ASSIGNED">
+                          <id nullFlavor="NI"/>
+                          <addr nullFlavor="UNK">
+                            <streetAddressLine nullFlavor="NI"/>
+                            <city nullFlavor="NI"/>
+                            <country nullFlavor="NI"/>
+                          </addr>
+                          <telecom nullFlavor="NI"/>
+                          <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                            <name>
+                              <given>Alicia</given>
+                              <family>Lane</family>
+                            </name>
+                          </assignedPerson>
+                        </assignedAuthor>
+                      </author>
+                    </act>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component typeCode="COMP" contextConductionInd="true">
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.6.1"/>
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" displayName="Allergies, adverse reactions, alerts" codeSystemName="LOINC"/>
+          <title>Allergies, Adverse Reactions, Alerts</title>
+          <text><table border="1" width="95%"><colgroup><col width="25%"/><col width="45%"/><col width="15%"/><col width="15%"/></colgroup><thead><tr><th>Substance</th><th>Reaction</th><th>Severity</th><th>Status</th></tr></thead><tbody><tr><td><content ID="ALLERGEN7557276">sulfa drugs</content></td><td><content ID="REACTION30065921">swelling</content></td><td><content ID="ALLSEV7557276"> </content></td><td><content ID="ALLSTAT7557276">Active</content></td></tr><tr><td><content ID="ALLERGEN7557277">lithium</content></td><td><content ID="REACTION30065911">confusion</content>
+
+<content ID="REACTION30065909">swelling</content></td><td><content ID="ALLSEV7557277"> </content></td><td><content ID="ALLSTAT7557277">Active</content></td></tr><tr><td><content ID="ALLERGEN30709707">Haldol</content></td><td><content ID="REACTION30709709">not sure of reaction</content></td><td><content ID="ALLSEV30709707"> </content></td><td><content ID="ALLSTAT30709707">Active</content></td></tr><tr><td><content ID="ALLERGEN30635183">oxyCODONE<sup>1</sup></content></td><td><content ID="REACTION30635187">decreased LOC</content>
+
+<content ID="REACTION30635185">confusion</content></td><td><content ID="ALLSEV30635183"> </content></td><td><content ID="ALLSTAT30635183">Active</content></td></tr><tr><td><content ID="ALLERGEN30065933">lisinopril</content></td><td><content ID="REACTION30065935">tongue swelling</content></td><td><content ID="ALLSEV30065933"> </content></td><td><content ID="ALLSTAT30065933">Active</content></td></tr></tbody></table><paragraph><sup>1</sup><content ID="ALLCMT30635183.1">daughter gave history</content></paragraph></text>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <act moodCode="EVN" classCode="ACT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
+              <id root="Hl2jH251-5oj2-5g0z-qkYL-90W864y19t0I"/>
+              <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" displayName="Allergies, adverse reactions, alerts" codeSystemName="LOINC"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low nullFlavor="NI"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" contextConductionInd="true">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+                  <id root="ViL96ZHu-6756-7154-7253-z5665081DL6j"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActCode" displayName="Assertion"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low nullFlavor="NI"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="416098002" displayName="Drug allergy"/>
+                  <author>
+                    <time value="20210328135149"/>
+                    <assignedAuthor classCode="ASSIGNED">
+                      <id nullFlavor="NI"/>
+                      <addr nullFlavor="UNK">
+                        <streetAddressLine nullFlavor="NI"/>
+                        <city nullFlavor="NI"/>
+                        <country nullFlavor="NI"/>
+                      </addr>
+                      <assignedPerson>
+                        <name>
+                          <given nullFlavor="NA"/>
+                          <family nullFlavor="NA"/>
+                        </name>
+                      </assignedPerson>
+                    </assignedAuthor>
+                  </author>
+                  <participant typeCode="CSM" contextControlCode="OP">
+                    <participantRole classCode="MANU">
+                      <playingEntity classCode="MMAT">
+                        <code nullFlavor="OTH">
+                          <originalText>
+                            <reference value="#ALLERGEN7557276"/>
+                          </originalText>
+                          <translation code="16" codeSystem="2.16.840.1.113883.6.313" codeSystemName="MUL.ALGCAT" displayName="sulfa drugs"/>
+                        </code>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CE" nullFlavor="UNK"><originalText><reference value="#ALLSTAT7557276"/></originalText></value>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="MFST" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                      <id root="Jq4552tc-11X4-7834-M4hV-2lj55672175M"/>
+                      <code nullFlavor="UNK"/>
+                      <text><reference value="#REACTION30065921"/></text>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CD" nullFlavor="UNK"><originalText><reference value="#REACTION30065921"/></originalText></value>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <act moodCode="EVN" classCode="ACT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
+              <id root="4m603079-2725-1854-C09X-5Z84Z296981s"/>
+              <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" displayName="Allergies, adverse reactions, alerts" codeSystemName="LOINC"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low nullFlavor="NI"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" contextConductionInd="true">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+                  <id root="00018kED-100J-4756-4019-649t5Z940j5u"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActCode" displayName="Assertion"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low nullFlavor="NI"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="416098002" displayName="Drug allergy"/>
+                  <author>
+                    <time value="20210328135135"/>
+                    <assignedAuthor classCode="ASSIGNED">
+                      <id nullFlavor="NI"/>
+                      <addr nullFlavor="UNK">
+                        <streetAddressLine nullFlavor="NI"/>
+                        <city nullFlavor="NI"/>
+                        <country nullFlavor="NI"/>
+                      </addr>
+                      <assignedPerson>
+                        <name>
+                          <given nullFlavor="NA"/>
+                          <family nullFlavor="NA"/>
+                        </name>
+                      </assignedPerson>
+                    </assignedAuthor>
+                  </author>
+                  <participant typeCode="CSM" contextControlCode="OP">
+                    <participantRole classCode="MANU">
+                      <playingEntity classCode="MMAT">
+                        <code code="6448" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Lithium">
+                          <originalText>
+                            <reference value="#ALLERGEN7557277"/>
+                          </originalText>
+                          <translation code="d00061" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id" displayName="lithium"/>
+                        </code>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CE" nullFlavor="UNK"><originalText><reference value="#ALLSTAT7557277"/></originalText></value>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="MFST" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                      <id root="P46126Sx-958g-91J7-Y927-K919261ru541"/>
+                      <code nullFlavor="UNK"/>
+                      <text><reference value="#REACTION30065911"/></text>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CD" nullFlavor="UNK"><originalText><reference value="#REACTION30065911"/></originalText></value>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="MFST" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                      <id root="LL1xc40s-360D-9g99-3D2E-2b646417v68x"/>
+                      <code nullFlavor="UNK"/>
+                      <text><reference value="#REACTION30065909"/></text>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CD" nullFlavor="UNK"><originalText><reference value="#REACTION30065909"/></originalText></value>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <act moodCode="EVN" classCode="ACT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
+              <id root="93k28075-69G0-8037-z968-1O8G96kX9Var"/>
+              <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" displayName="Allergies, adverse reactions, alerts" codeSystemName="LOINC"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low nullFlavor="NI"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" contextConductionInd="true">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+                  <id root="v35Y05u1-PfL6-0782-8ro5-3jf50n60465u"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActCode" displayName="Assertion"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low nullFlavor="NI"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="416098002" displayName="Drug allergy"/>
+                  <author>
+                    <time value="20210715133716"/>
+                    <assignedAuthor classCode="ASSIGNED">
+                      <id nullFlavor="NI"/>
+                      <addr nullFlavor="UNK">
+                        <streetAddressLine nullFlavor="NI"/>
+                        <city nullFlavor="NI"/>
+                        <country nullFlavor="NI"/>
+                      </addr>
+                      <assignedPerson>
+                        <name>
+                          <given nullFlavor="NA"/>
+                          <family nullFlavor="NA"/>
+                        </name>
+                      </assignedPerson>
+                    </assignedAuthor>
+                  </author>
+                  <participant typeCode="CSM" contextControlCode="OP">
+                    <participantRole classCode="MANU">
+                      <playingEntity classCode="MMAT">
+                        <code code="5093" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Haloperidol">
+                          <originalText>
+                            <reference value="#ALLERGEN30709707"/>
+                          </originalText>
+                          <translation code="d00027" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id" displayName="haloperidol"/>
+                          <translation code="151839" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Haldol"/>
+                        </code>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CE" nullFlavor="UNK"><originalText><reference value="#ALLSTAT30709707"/></originalText></value>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="MFST" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                      <id root="Moivf16o-0n32-6k57-2v09-X9hP52819N77"/>
+                      <code nullFlavor="UNK"/>
+                      <text><reference value="#REACTION30709709"/></text>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CD" nullFlavor="UNK"><originalText><reference value="#REACTION30709709"/></originalText></value>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <act moodCode="EVN" classCode="ACT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
+              <id root="8v1Zw09h-31N9-78mQ-J98E-O31x5u30jo71"/>
+              <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" displayName="Allergies, adverse reactions, alerts" codeSystemName="LOINC"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low nullFlavor="NI"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" contextConductionInd="true">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+                  <id root="Y69F296g-593D-6l56-HG54-5v3T2b9xv030"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActCode" displayName="Assertion"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low nullFlavor="NI"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="416098002" displayName="Drug allergy"/>
+                  <author>
+                    <time value="20210705150230"/>
+                    <assignedAuthor classCode="ASSIGNED">
+                      <id nullFlavor="NI"/>
+                      <addr nullFlavor="UNK">
+                        <streetAddressLine nullFlavor="NI"/>
+                        <city nullFlavor="NI"/>
+                        <country nullFlavor="NI"/>
+                      </addr>
+                      <assignedPerson>
+                        <name>
+                          <given nullFlavor="NA"/>
+                          <family nullFlavor="NA"/>
+                        </name>
+                      </assignedPerson>
+                    </assignedAuthor>
+                  </author>
+                  <participant typeCode="CSM" contextControlCode="OP">
+                    <participantRole classCode="MANU">
+                      <playingEntity classCode="MMAT">
+                        <code code="7804" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Oxycodone">
+                          <originalText>
+                            <reference value="#ALLERGEN30635183"/>
+                          </originalText>
+                          <translation code="d00329" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id" displayName="oxycodone"/>
+                        </code>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CE" nullFlavor="UNK"><originalText><reference value="#ALLSTAT30635183"/></originalText></value>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="MFST" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                      <id root="2964VT9T-tk42-31X6-W5R9-16f5A874CD41"/>
+                      <code nullFlavor="UNK"/>
+                      <text><reference value="#REACTION30635187"/></text>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CD" nullFlavor="UNK"><originalText><reference value="#REACTION30635187"/></originalText></value>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="MFST" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                      <id root="60fZl2b8-7F09-1e60-g664-6x4332690889"/>
+                      <code nullFlavor="UNK"/>
+                      <text><reference value="#REACTION30635185"/></text>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CD" nullFlavor="UNK"><originalText><reference value="#REACTION30635185"/></originalText></value>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true" contextConductionInd="true">
+                    <act classCode="ACT" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.64"/>
+                      <code code="48767-8" displayName="Annotation comment" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                      <text><reference value="#ALLCMT30635183.1"/></text>
+                      <author typeCode="AUT">
+                        <time value="20210705150230"/>
+                        <assignedAuthor classCode="ASSIGNED">
+                          <id nullFlavor="NI"/>
+                          <addr nullFlavor="UNK">
+                            <streetAddressLine nullFlavor="NI"/>
+                            <city nullFlavor="NI"/>
+                            <country nullFlavor="NI"/>
+                          </addr>
+                          <telecom nullFlavor="NI"/>
+                          <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                            <name>
+                              <given>Joseph</given>
+                              <given>Amy</given>
+                              <family>Moore</family>
+                            </name>
+                          </assignedPerson>
+                        </assignedAuthor>
+                      </author>
+                    </act>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <act moodCode="EVN" classCode="ACT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
+              <id root="28fk5j7B-07qm-7027-mol7-AEW3J347PL28"/>
+              <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" displayName="Allergies, adverse reactions, alerts" codeSystemName="LOINC"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low nullFlavor="NI"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" contextConductionInd="true">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+                  <id root="s7957O68-a078-9782-T452-2b3ITd71qm4H"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActCode" displayName="Assertion"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low nullFlavor="NI"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="416098002" displayName="Drug allergy"/>
+                  <author>
+                    <time value="20210328135249"/>
+                    <assignedAuthor classCode="ASSIGNED">
+                      <id nullFlavor="NI"/>
+                      <addr nullFlavor="UNK">
+                        <streetAddressLine nullFlavor="NI"/>
+                        <city nullFlavor="NI"/>
+                        <country nullFlavor="NI"/>
+                      </addr>
+                      <assignedPerson>
+                        <name>
+                          <given nullFlavor="NA"/>
+                          <family nullFlavor="NA"/>
+                        </name>
+                      </assignedPerson>
+                    </assignedAuthor>
+                  </author>
+                  <participant typeCode="CSM" contextControlCode="OP">
+                    <participantRole classCode="MANU">
+                      <playingEntity classCode="MMAT">
+                        <code code="29046" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Lisinopril">
+                          <originalText>
+                            <reference value="#ALLERGEN30065933"/>
+                          </originalText>
+                          <translation code="d00732" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id" displayName="lisinopril"/>
+                        </code>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CE" nullFlavor="UNK"><originalText><reference value="#ALLSTAT30065933"/></originalText></value>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="MFST" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                      <id root="5D080i1E-9S39-33l7-z52A-3Z493821330g"/>
+                      <code nullFlavor="UNK"/>
+                      <text><reference value="#REACTION30065935"/></text>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CD" nullFlavor="UNK"><originalText><reference value="#REACTION30065935"/></originalText></value>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component typeCode="COMP" contextConductionInd="true">
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.1"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
+          <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" displayName="History of Medication Use" codeSystemName="LOINC"/>
+          <title>Medications</title>
+          <text><paragraph ID="MEDICATION637371086"><content ID="MEDPROD637371086" styleCode="Bold">Abilify 30 mg oral tablet</content><content ID="MEDSIG637371086">
+
+30 mg = 1 tab, PO, bid, Refill(s): 0</content>
+
+Start Date: 2009-01-19
+
+Status: Ordered</paragraph><paragraph ID="MEDICATION8548301405"><content ID="MEDPROD8548301405" styleCode="Bold">amLODIPine 5 mg oral tablet</content><content ID="MEDSIG8548301405">
+
+5 mg = 1 tab, PO, QDay, Refill(s): 0</content>
+
+Start Date: 2022-01-06
+
+Status: Ordered</paragraph><paragraph ID="MEDICATION7906079743"><content ID="MEDPROD7906079743" styleCode="Bold">aspirin</content><content ID="MEDSIG7906079743">
+
+81 mg =, PO, QDay, Refill(s): 0</content>
+
+Start Date: 2021-03-28
+
+Status: Ordered</paragraph><paragraph ID="MEDICATION7906074541"><content ID="MEDPROD7906074541" styleCode="Bold">calcitriol</content><content ID="MEDSIG7906074541">
+
+0.25 mcg =, PO, MWF, Refill(s): 0</content>
+
+Start Date: 2021-03-28
+
+Status: Ordered</paragraph><paragraph ID="MEDICATION8127156203"><content ID="MEDPROD8127156203" styleCode="Bold">carvedilol 25 mg oral tablet</content><content ID="MEDSIG8127156203">
+
+25 mg = 1 tab, PO, bid, Refill(s): 0</content>
+
+Start Date: 2021-07-05
+
+Status: Ordered</paragraph><paragraph ID="MEDICATION8151133855"><content ID="MEDPROD8151133855" styleCode="Bold">ergocalciferol 50,000 intl units (1.25 mg) oral capsule</content><content ID="MEDSIG8151133855">
+
+50,000 IntUnits = 1 cap, PO, Sunday</content>
+
+Start Date: 2021-07-15
+
+Status: Ordered</paragraph><paragraph ID="MEDICATION8127157103"><content ID="MEDPROD8127157103" styleCode="Bold">famotidine 20 mg oral tablet</content><content ID="MEDSIG8127157103">
+
+20 mg = 1 tab, PO, bid, Refill(s): 0</content>
+
+Start Date: 2021-07-05
+
+Status: Ordered</paragraph><paragraph ID="MEDICATION8151135005"><content ID="MEDPROD8151135005" styleCode="Bold">gabapentin 300 mg oral capsule</content><content ID="MEDSIG8151135005">
+
+600 mg = 2 cap, PO, tid</content>
+
+Start Date: 2021-07-15
+
+Status: Ordered</paragraph><paragraph ID="MEDICATION7906081061"><content ID="MEDPROD7906081061" styleCode="Bold">HumaLOG KwikPen 100 units/mL injectable solution</content><content ID="MEDSIG7906081061">
+
+Subcutaneous, ac, sliding scale, Refill(s): 0</content>
+
+Start Date: 2021-03-28
+
+Status: Ordered</paragraph><paragraph ID="MEDICATION6497120553"><content ID="MEDPROD6497120553" styleCode="Bold">Keppra</content><content ID="MEDSIG6497120553">
+
+500 mg =, PO, bid, Refill(s): 0</content>
+
+Start Date: 2019-08-17
+
+Status: Ordered</paragraph><paragraph ID="MEDICATION7906080617"><content ID="MEDPROD7906080617" styleCode="Bold">Lantus Solostar Pen</content><content ID="MEDSIG7906080617">
+
+25 units =, Subcutaneous, QDay, Refill(s): 0</content>
+
+Start Date: 2021-03-28
+
+Status: Ordered</paragraph><paragraph ID="MEDICATION7906073599"><content ID="MEDPROD7906073599" styleCode="Bold">loratadine</content><content ID="MEDSIG7906073599">
+
+10 mg =, PO, QDay, Refill(s): 0</content>
+
+Start Date: 2021-03-28
+
+Status: Ordered</paragraph><paragraph ID="MEDICATION7906076213"><content ID="MEDPROD7906076213" styleCode="Bold">omeprazole</content><content ID="MEDSIG7906076213">
+
+40 mg =, PO, QDay, Refill(s): 0</content>
+
+Start Date: 2021-03-28
+
+Status: Ordered</paragraph><paragraph ID="MEDICATION8151143491"><content ID="MEDPROD8151143491" styleCode="Bold">potassium chloride 10 mEq oral capsule, extended release</content><content ID="MEDSIG8151143491">
+
+10 mEq = 1 cap, PO, bid</content>
+
+Start Date: 2021-07-15
+
+Status: Ordered</paragraph><paragraph ID="MEDICATION8548302025"><content ID="MEDPROD8548302025" styleCode="Bold">ProAir HFA</content><content ID="MEDSIG8548302025">
+
+INH, q6h, 1 puff daily, Refill(s): 0</content>
+
+Start Date: 2022-01-06
+
+Status: Ordered</paragraph><paragraph ID="MEDICATION6497118011"><content ID="MEDPROD6497118011" styleCode="Bold">Robaxin</content><content ID="MEDSIG6497118011">
+
+750 mg =, PO, tid, PRN Spasm, Refill(s): 0</content>
+
+Start Date: 2019-08-17
+
+Status: Ordered</paragraph><paragraph ID="MEDICATION7906072865"><content ID="MEDPROD7906072865" styleCode="Bold">rosuvastatin</content><content ID="MEDSIG7906072865">
+
+20 mg =, PO, hs, Refill(s): 0</content>
+
+Start Date: 2021-03-28
+
+Status: Ordered</paragraph><paragraph ID="MEDICATION8548312357"><content ID="MEDPROD8548312357" styleCode="Bold">Symbicort 160 mcg-4.5 mcg/inh inhalation aerosol</content><content ID="MEDSIG8548312357">
+
+2 puff, INH, bid, Refill(s): 0</content>
+
+Start Date: 2022-01-06
+
+Status: Ordered</paragraph><paragraph ID="MEDICATION8151145851"><content ID="MEDPROD8151145851" styleCode="Bold">torsemide 20 mg oral tablet</content><content ID="MEDSIG8151145851">
+
+40 mg = 2 tab, PO, bid</content>
+
+Start Date: 2021-07-15
+
+Status: Ordered</paragraph><paragraph ID="MEDICATION8151139815"><content ID="MEDPROD8151139815" styleCode="Bold">traZODone 150 mg oral tablet</content><content ID="MEDSIG8151139815">
+
+300 mg = 2 tab, PO, hs, PRN Insomnia/anxiety</content>
+
+Start Date: 2021-07-15
+
+Status: Ordered</paragraph><paragraph ID="MEDICATION6497114321"><content ID="MEDPROD6497114321" styleCode="Bold">venlafaxine</content><content ID="MEDSIG6497114321">
+
+150 mg =, PO, QDay, Refill(s): 0</content>
+
+Start Date: 2019-08-17
+
+Status: Ordered</paragraph></text>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="t61SW78n-0f96-1058-3RDK-8P62z56y26E0"/>
+              <text><reference value="#MEDSIG7906072865"/></text>
+              <statusCode code="ordered"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20210328140000"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK">
+                <originalText>By Mouth</originalText>
+              </routeCode>
+              <doseQuantity value="20.0" unit="mg"/>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code nullFlavor="OTH">
+                      <originalText>
+                        <reference value="#MEDPROD7906072865"/>
+                      </originalText>
+                      <translation code="d04851" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                      <translation code="46317" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                      <translation code="301542" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="rosuvastatin"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <author>
+                <time value="20220107094740"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" nullFlavor="UNK"><originalText>Ordered</originalText></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="008iwPJ0-N6Et-9p4O-p626-C587708zk985"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <product typeCode="PRD">
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <code nullFlavor="OTH">
+                          <originalText>
+                            <reference value="#MEDPROD7906072865"/>
+                          </originalText>
+                          <translation code="d04851" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                          <translation code="46317" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                          <translation code="301542" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="rosuvastatin"/>
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </product>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="8Wx9g413-HQ66-5232-EAN9-5Emo0196j391"/>
+              <text><reference value="#MEDSIG7906073599"/></text>
+              <statusCode code="ordered"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20210328140000"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK">
+                <originalText>By Mouth</originalText>
+              </routeCode>
+              <doseQuantity value="10.0" unit="mg"/>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code nullFlavor="OTH">
+                      <originalText>
+                        <reference value="#MEDPROD7906073599"/>
+                      </originalText>
+                      <translation code="d03050" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                      <translation code="12890" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                      <translation code="28889" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Loratadine"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <author>
+                <time value="20220107094740"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" nullFlavor="UNK"><originalText>Ordered</originalText></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="73497ejR-0356-603q-162E-u4jK082jR5A9"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <product typeCode="PRD">
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <code nullFlavor="OTH">
+                          <originalText>
+                            <reference value="#MEDPROD7906073599"/>
+                          </originalText>
+                          <translation code="d03050" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                          <translation code="12890" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                          <translation code="28889" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Loratadine"/>
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </product>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="3o36Rz3G-Oh0n-7A40-O2y4-u3c9501N1K6a"/>
+              <text><reference value="#MEDSIG7906074541"/></text>
+              <statusCode code="ordered"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20210328140100"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK">
+                <originalText>By Mouth</originalText>
+              </routeCode>
+              <doseQuantity value="0.25" unit="ug"/>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code nullFlavor="OTH">
+                      <originalText>
+                        <reference value="#MEDPROD7906074541"/>
+                      </originalText>
+                      <translation code="d03126" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                      <translation code="12932" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                      <translation code="1894" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Calcitriol"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <author>
+                <time value="20220107094740"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" nullFlavor="UNK"><originalText>Ordered</originalText></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="14N0N316-4Cy1-5O79-z526-15P8487A2a9e"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <product typeCode="PRD">
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <code nullFlavor="OTH">
+                          <originalText>
+                            <reference value="#MEDPROD7906074541"/>
+                          </originalText>
+                          <translation code="d03126" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                          <translation code="12932" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                          <translation code="1894" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Calcitriol"/>
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </product>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="s50DNb6u-43wY-6m73-8O08-t41j91H2n366"/>
+              <text><reference value="#MEDSIG7906076213"/></text>
+              <statusCode code="ordered"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20210328140200"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK">
+                <originalText>By Mouth</originalText>
+              </routeCode>
+              <doseQuantity value="40.0" unit="mg"/>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code nullFlavor="OTH">
+                      <originalText>
+                        <reference value="#MEDPROD7906076213"/>
+                      </originalText>
+                      <translation code="d00325" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                      <translation code="12233" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                      <translation code="7646" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Omeprazole"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <author>
+                <time value="20220107094740"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" nullFlavor="UNK"><originalText>Ordered</originalText></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="257773QY-Y535-9l5c-j82w-9470G65113en"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <product typeCode="PRD">
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <code nullFlavor="OTH">
+                          <originalText>
+                            <reference value="#MEDPROD7906076213"/>
+                          </originalText>
+                          <translation code="d00325" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                          <translation code="12233" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                          <translation code="7646" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Omeprazole"/>
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </product>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="28586031-p6I5-0533-1273-6D48D4d98Qz3"/>
+              <text><reference value="#MEDSIG7906079743"/></text>
+              <statusCode code="ordered"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20210328140400"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK">
+                <originalText>By Mouth</originalText>
+              </routeCode>
+              <doseQuantity value="81.0" unit="mg"/>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code nullFlavor="OTH">
+                      <originalText>
+                        <reference value="#MEDPROD7906079743"/>
+                      </originalText>
+                      <translation code="d00170" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                      <translation code="12101" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                      <translation code="1191" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Aspirin"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <author>
+                <time value="20220107094740"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" nullFlavor="UNK"><originalText>Ordered</originalText></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="apz9SH22-6451-69rV-0dR9-6p49W163501h"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <product typeCode="PRD">
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <code nullFlavor="OTH">
+                          <originalText>
+                            <reference value="#MEDPROD7906079743"/>
+                          </originalText>
+                          <translation code="d00170" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                          <translation code="12101" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                          <translation code="1191" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Aspirin"/>
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </product>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="9QKkUn3m-738m-1X34-3aM1-20yx7S197190"/>
+              <text><reference value="#MEDSIG7906080617"/></text>
+              <statusCode code="ordered"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20210328140400"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK">
+                <originalText>Subcutaneous</originalText>
+              </routeCode>
+              <doseQuantity value="25.0" unit="Units"/>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code nullFlavor="OTH">
+                      <originalText>
+                        <reference value="#MEDPROD7906080617"/>
+                      </originalText>
+                      <translation code="d04538" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                      <translation code="116917" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <author>
+                <time value="20220107094740"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" nullFlavor="UNK"><originalText>Ordered</originalText></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="V0g08e20-p883-161c-f064-0R5t82082kk0"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <product typeCode="PRD">
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <code nullFlavor="OTH">
+                          <originalText>
+                            <reference value="#MEDPROD7906080617"/>
+                          </originalText>
+                          <translation code="d04538" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                          <translation code="116917" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </product>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="875513b4-114x-5x71-B57e-RRr5I719182y"/>
+              <text><reference value="#MEDSIG7906081061"/></text>
+              <statusCode code="ordered"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20210328140500"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK">
+                <originalText>Subcutaneous</originalText>
+              </routeCode>
+              <doseQuantity nullFlavor="NI"/>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code nullFlavor="OTH">
+                      <originalText>
+                        <reference value="#MEDPROD7906081061"/>
+                      </originalText>
+                      <translation code="d04373" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                      <translation code="254479" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                      <translation code="1652640" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="3 ML Insulin Lispro 100 UNT/ML Pen Injector [Humalog]"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <author>
+                <time value="20220107094740"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" nullFlavor="UNK"><originalText>Ordered</originalText></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="17Y35081-6G38-8142-2O3w-TT32J3h78i66"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <product typeCode="PRD">
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <code nullFlavor="OTH">
+                          <originalText>
+                            <reference value="#MEDPROD7906081061"/>
+                          </originalText>
+                          <translation code="d04373" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                          <translation code="254479" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                          <translation code="1652640" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="3 ML Insulin Lispro 100 UNT/ML Pen Injector [Humalog]"/>
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </product>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="288u7A88-7L29-7f07-5522-1M62656xy6ab"/>
+              <text><reference value="#MEDSIG6497114321"/></text>
+              <statusCode code="ordered"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20190817111800"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK">
+                <originalText>By Mouth</originalText>
+              </routeCode>
+              <doseQuantity value="150.0" unit="mg"/>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code nullFlavor="OTH">
+                      <originalText>
+                        <reference value="#MEDPROD6497114321"/>
+                      </originalText>
+                      <translation code="d03181" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                      <translation code="12967" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                      <translation code="39786" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="venlafaxine"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <author>
+                <time value="20220107094740"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" nullFlavor="UNK"><originalText>Ordered</originalText></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="1J8H85bb-0838-71Fl-F245-b57t7w536av0"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <product typeCode="PRD">
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <code nullFlavor="OTH">
+                          <originalText>
+                            <reference value="#MEDPROD6497114321"/>
+                          </originalText>
+                          <translation code="d03181" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                          <translation code="12967" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                          <translation code="39786" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="venlafaxine"/>
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </product>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="pB19mC8L-J1q1-9IFJ-7u86-R19C19917P04"/>
+              <text><reference value="#MEDSIG6497118011"/></text>
+              <statusCode code="ordered"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20190817111900"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK">
+                <originalText>By Mouth</originalText>
+              </routeCode>
+              <doseQuantity value="750.0" unit="mg"/>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code nullFlavor="OTH">
+                      <originalText>
+                        <reference value="#MEDPROD6497118011"/>
+                      </originalText>
+                      <translation code="d00965" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                      <translation code="1281" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                      <translation code="202955" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Robaxin"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <author>
+                <time value="20220107094740"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" nullFlavor="UNK"><originalText>Ordered</originalText></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="171i2uY1-sa4y-8bp9-8768-2r907f560210"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <product typeCode="PRD">
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <code nullFlavor="OTH">
+                          <originalText>
+                            <reference value="#MEDPROD6497118011"/>
+                          </originalText>
+                          <translation code="d00965" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                          <translation code="1281" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                          <translation code="202955" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Robaxin"/>
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </product>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="Im03GdPA-7c68-427s-WpTM-85971REp0U99"/>
+              <text><reference value="#MEDSIG6497120553"/></text>
+              <statusCode code="ordered"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20190817112000"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK">
+                <originalText>By Mouth</originalText>
+              </routeCode>
+              <doseQuantity value="500.0" unit="mg"/>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code nullFlavor="OTH">
+                      <originalText>
+                        <reference value="#MEDPROD6497120553"/>
+                      </originalText>
+                      <translation code="d04499" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                      <translation code="31546" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                      <translation code="261547" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Keppra"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <author>
+                <time value="20220107094740"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" nullFlavor="UNK"><originalText>Ordered</originalText></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="4Wv97N23-5eii-1w3I-0P2V-092DL14oT414"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <product typeCode="PRD">
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <code nullFlavor="OTH">
+                          <originalText>
+                            <reference value="#MEDPROD6497120553"/>
+                          </originalText>
+                          <translation code="d04499" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                          <translation code="31546" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                          <translation code="261547" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Keppra"/>
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </product>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="CUqH4522-YK26-6186-1040-0258814197O7"/>
+              <text><reference value="#MEDSIG637371086"/></text>
+              <statusCode code="ordered"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20090119182338"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK">
+                <originalText>By Mouth</originalText>
+              </routeCode>
+              <doseQuantity value="30.0" unit="mg"/>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code code="349547" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="aripiprazole 30 MG Oral Tablet">
+                      <originalText>
+                        <reference value="#MEDPROD637371086"/>
+                      </originalText>
+                      <translation code="d04825" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                      <translation code="45554" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                      <translation code="352310" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="aripiprazole 30 MG Oral Tablet [Abilify]"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <author>
+                <time value="20220107094740"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" nullFlavor="UNK"><originalText>Ordered</originalText></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="F09GR158-V28x-1914-a6u6-uc581647v21j"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <product typeCode="PRD">
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <code code="349547" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="aripiprazole 30 MG Oral Tablet">
+                          <originalText>
+                            <reference value="#MEDPROD637371086"/>
+                          </originalText>
+                          <translation code="d04825" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                          <translation code="45554" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                          <translation code="352310" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="aripiprazole 30 MG Oral Tablet [Abilify]"/>
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </product>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="V9dhV474-q420-6s4w-QePU-2JG863p6z04r"/>
+              <text><reference value="#MEDSIG8151133855"/></text>
+              <statusCode code="ordered"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20210715141700"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK">
+                <originalText>By Mouth</originalText>
+              </routeCode>
+              <doseQuantity value="50000.0" unit="[iU]"/>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code code="1367410" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Ergocalciferol 50000 UNT Oral Capsule">
+                      <originalText>
+                        <reference value="#MEDPROD8151133855"/>
+                      </originalText>
+                      <translation code="d03128" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                      <translation code="22136" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <author>
+                <time value="20220107094741"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" nullFlavor="UNK"><originalText>Ordered</originalText></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="3l7E90y1-0B60-939l-LPt4-j9h46pl99478"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <product typeCode="PRD">
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <code code="1367410" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Ergocalciferol 50000 UNT Oral Capsule">
+                          <originalText>
+                            <reference value="#MEDPROD8151133855"/>
+                          </originalText>
+                          <translation code="d03128" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                          <translation code="22136" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </product>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="6b8T278S-511p-1874-3210-596V6N1P5zoa"/>
+              <text><reference value="#MEDSIG8151135005"/></text>
+              <statusCode code="ordered"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20210715141800"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK">
+                <originalText>By Mouth</originalText>
+              </routeCode>
+              <doseQuantity value="600.0" unit="mg"/>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code nullFlavor="OTH">
+                      <originalText>
+                        <reference value="#MEDPROD8151135005"/>
+                      </originalText>
+                      <translation code="d03182" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                      <translation code="19429" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                      <translation code="310431" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="gabapentin 300 MG Oral Capsule"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <author>
+                <time value="20220107094741"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" nullFlavor="UNK"><originalText>Ordered</originalText></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="8js60ewm-5241-904i-v6Ww-0eLf61jOe7I9"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <product typeCode="PRD">
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <code nullFlavor="OTH">
+                          <originalText>
+                            <reference value="#MEDPROD8151135005"/>
+                          </originalText>
+                          <translation code="d03182" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                          <translation code="19429" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                          <translation code="310431" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="gabapentin 300 MG Oral Capsule"/>
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </product>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="7B94T0VS-S7pW-74FI-G41U-Mdg92HY2993G"/>
+              <text><reference value="#MEDSIG8151139815"/></text>
+              <statusCode code="ordered"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20210715142100"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK">
+                <originalText>By Mouth</originalText>
+              </routeCode>
+              <doseQuantity value="300.0" unit="mg"/>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code nullFlavor="OTH">
+                      <originalText>
+                        <reference value="#MEDPROD8151139815"/>
+                      </originalText>
+                      <translation code="d00395" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                      <translation code="18529" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                      <translation code="856364" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Trazodone Hydrochloride 150 MG Oral Tablet"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <author>
+                <time value="20220107094741"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" nullFlavor="UNK"><originalText>Ordered</originalText></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="9TK2700O-8QbT-2674-X6TQ-r0W2dz7e4EV5"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <product typeCode="PRD">
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <code nullFlavor="OTH">
+                          <originalText>
+                            <reference value="#MEDPROD8151139815"/>
+                          </originalText>
+                          <translation code="d00395" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                          <translation code="18529" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                          <translation code="856364" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Trazodone Hydrochloride 150 MG Oral Tablet"/>
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </product>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="Z3iew68M-p42e-4780-WX1J-2m0o9Ug9068j"/>
+              <text><reference value="#MEDSIG8151143491"/></text>
+              <statusCode code="ordered"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20210715142300"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK">
+                <originalText>By Mouth</originalText>
+              </routeCode>
+              <doseQuantity value="10.0" unit="meq"/>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code nullFlavor="OTH">
+                      <originalText>
+                        <reference value="#MEDPROD8151143491"/>
+                      </originalText>
+                      <translation code="d00345" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                      <translation code="28279" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                      <translation code="312504" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Potassium Chloride 10 MEQ Extended Release Capsule"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <author>
+                <time value="20220107094741"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" nullFlavor="UNK"><originalText>Ordered</originalText></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="15g5X219-554w-0Rkb-3530-108n9f374B10"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <product typeCode="PRD">
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <code nullFlavor="OTH">
+                          <originalText>
+                            <reference value="#MEDPROD8151143491"/>
+                          </originalText>
+                          <translation code="d00345" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                          <translation code="28279" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                          <translation code="312504" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Potassium Chloride 10 MEQ Extended Release Capsule"/>
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </product>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="5s7460E7-edk0-9721-n531-507803zS8L45"/>
+              <text><reference value="#MEDSIG8151145851"/></text>
+              <statusCode code="ordered"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20210715142400"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK">
+                <originalText>By Mouth</originalText>
+              </routeCode>
+              <doseQuantity value="40.0" unit="mg"/>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code code="198371" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="torsemide 20 MG Oral Tablet">
+                      <originalText>
+                        <reference value="#MEDPROD8151145851"/>
+                      </originalText>
+                      <translation code="d03189" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                      <translation code="17929" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <author>
+                <time value="20220107094741"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" nullFlavor="UNK"><originalText>Ordered</originalText></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="1RTU28q5-P21o-624I-c7Mc-Wu427487ac91"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <product typeCode="PRD">
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <code code="198371" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="torsemide 20 MG Oral Tablet">
+                          <originalText>
+                            <reference value="#MEDPROD8151145851"/>
+                          </originalText>
+                          <translation code="d03189" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                          <translation code="17929" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </product>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="I6I0a51f-16lK-82Gi-g54a-93032ym1gG76"/>
+              <text><reference value="#MEDSIG8127156203"/></text>
+              <statusCode code="ordered"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20210705150500"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK">
+                <originalText>By Mouth</originalText>
+              </routeCode>
+              <doseQuantity value="25.0" unit="mg"/>
+              <administrationUnitCode nullFlavor="UNK">
+                <originalText>Tablet</originalText>
+              </administrationUnitCode>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code nullFlavor="OTH">
+                      <originalText>
+                        <reference value="#MEDPROD8127156203"/>
+                      </originalText>
+                      <translation code="d03847" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                      <translation code="18279" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                      <translation code="200033" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="carvedilol 25 MG Oral Tablet"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <author>
+                <time value="20220107094740"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" nullFlavor="UNK"><originalText>Ordered</originalText></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="ex59544s-82wM-8778-5r1y-7V33IDKsv1OV"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <product typeCode="PRD">
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <code nullFlavor="OTH">
+                          <originalText>
+                            <reference value="#MEDPROD8127156203"/>
+                          </originalText>
+                          <translation code="d03847" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                          <translation code="18279" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                          <translation code="200033" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="carvedilol 25 MG Oral Tablet"/>
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </product>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="3O872144-0926-3542-F087-F17M84X8591R"/>
+              <text><reference value="#MEDSIG8127157103"/></text>
+              <statusCode code="ordered"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20210705150600"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK">
+                <originalText>By Mouth</originalText>
+              </routeCode>
+              <doseQuantity value="20.0" unit="mg"/>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code code="310273" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Famotidine 20 MG Oral Tablet">
+                      <originalText>
+                        <reference value="#MEDPROD8127157103"/>
+                      </originalText>
+                      <translation code="d00141" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                      <translation code="18332" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <author>
+                <time value="20220107094740"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" nullFlavor="UNK"><originalText>Ordered</originalText></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="H732144C-45Z7-33w8-37B4-456982W423ue"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <product typeCode="PRD">
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <code code="310273" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Famotidine 20 MG Oral Tablet">
+                          <originalText>
+                            <reference value="#MEDPROD8127157103"/>
+                          </originalText>
+                          <translation code="d00141" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                          <translation code="18332" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </product>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="9FR274F1-87Yj-4686-sw24-6353gt2k5I95"/>
+              <text><reference value="#MEDSIG8548301405"/></text>
+              <statusCode code="ordered"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20220106160000"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK">
+                <originalText>By Mouth</originalText>
+              </routeCode>
+              <doseQuantity value="5.0" unit="mg"/>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code code="197361" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Amlodipine 5 MG Oral Tablet">
+                      <originalText>
+                        <reference value="#MEDPROD8548301405"/>
+                      </originalText>
+                      <translation code="d00689" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                      <translation code="17710" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <author>
+                <time value="20220107094741"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" nullFlavor="UNK"><originalText>Ordered</originalText></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="1N610A77-JMTW-484g-j6M6-9CB3tE985x32"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <product typeCode="PRD">
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <code code="197361" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Amlodipine 5 MG Oral Tablet">
+                          <originalText>
+                            <reference value="#MEDPROD8548301405"/>
+                          </originalText>
+                          <translation code="d00689" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                          <translation code="17710" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </product>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="X629640R-91S8-07c9-8768-cb4QWp9ivZQ3"/>
+              <text><reference value="#MEDSIG8548302025"/></text>
+              <statusCode code="ordered"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20220106160000"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK">
+                <originalText>Inhalation</originalText>
+              </routeCode>
+              <doseQuantity nullFlavor="NI"/>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code nullFlavor="OTH">
+                      <originalText>
+                        <reference value="#MEDPROD8548302025"/>
+                      </originalText>
+                      <translation code="d00749" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                      <translation code="84301" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                      <translation code="647295" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="ProAir HFA"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <author>
+                <time value="20220107094741"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" nullFlavor="UNK"><originalText>Ordered</originalText></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="46E13A2R-Q5Tp-7614-RKf6-1139P45B3W8X"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <product typeCode="PRD">
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <code nullFlavor="OTH">
+                          <originalText>
+                            <reference value="#MEDPROD8548302025"/>
+                          </originalText>
+                          <translation code="d00749" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                          <translation code="84301" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                          <translation code="647295" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="ProAir HFA"/>
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </product>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="8EI99429-81Cf-30gL-Y64V-4271893u8499"/>
+              <text><reference value="#MEDSIG8548312357"/></text>
+              <statusCode code="ordered"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20220106160600"/>
+                <high nullFlavor="NI"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK">
+                <originalText>Inhalation</originalText>
+              </routeCode>
+              <doseQuantity value="2.0" unit="puff"/>
+              <administrationUnitCode nullFlavor="UNK">
+                <originalText>Aerosol</originalText>
+              </administrationUnitCode>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code nullFlavor="OTH">
+                      <originalText>
+                        <reference value="#MEDPROD8548312357"/>
+                      </originalText>
+                      <translation code="d04795" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                      <translation code="84268" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <author>
+                <time value="20220107094741"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" nullFlavor="UNK"><originalText>Ordered</originalText></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="392GT993-655E-31S9-259L-3O40L602Q322"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <high nullFlavor="NI"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <product typeCode="PRD">
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <code nullFlavor="OTH">
+                          <originalText>
+                            <reference value="#MEDPROD8548312357"/>
+                          </originalText>
+                          <translation code="d04795" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+                          <translation code="84268" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </product>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component typeCode="COMP" contextConductionInd="true">
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/>
+          <title>Results</title>
+          <text><paragraph><content ID="NORESINFO">No data available for this section</content></paragraph></text>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="8S1543r7-1S0b-422q-47F7-34ZBDS0WYu9w"/>
+              <code xsi:type="CD" nullFlavor="NI"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="94528x47-36v4-30b0-W7O5-d4b0tMj7h022"/>
+                  <code nullFlavor="NI"/>
+                  <text><reference value="#NORESINFO"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime nullFlavor="NI"/>
+                  <value xsi:type="ST" nullFlavor="NI"></value>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component typeCode="COMP" contextConductionInd="true">
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.2"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.2.1"/>
+          <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" displayName="History of immunizations" codeSystemName="LOINC"/>
+          <title>Immunizations</title>
+          <text><paragraph styleCode="Bold">Given and Recorded</paragraph><table border="1" width="95%"><colgroup><col width="50%"/><col width="20%"/><col width="15%"/><col width="15%"/></colgroup><thead><tr><th>Vaccine</th><th>Date</th><th>Status</th><th>Refusal Reason</th></tr></thead><tbody><tr><td><content ID="IMMUN16867279198">influenza virus vaccine, inactivated</content></td><td>2021-04-16</td><td>Given</td><td> </td></tr></tbody></table></text>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <id root="phM04301L4-T9v4-0645-4n83-7e3o699whVWW-52067040370-3639997344977864"/>
+              <text><reference value="#IMMUN16867279198"/></text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20210416090400"/>
+              <routeCode nullFlavor="UNK">
+                <originalText>Intramuscular</originalText>
+              </routeCode>
+              <approachSiteCode nullFlavor="UNK">
+                <originalText>Left Upper Arm</originalText>
+              </approachSiteCode>
+              <doseQuantity value="0.5" unit="mL"/>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <manufacturedMaterial>
+                    <code code="150" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX" displayName="influenza, injectable, quadrivalent, preservative free">
+                      <originalText>
+                        <reference value="#IMMUN16867279198"/>
+                      </originalText>
+                      <translation code="33332-0320-01" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" displayName="Imfinzi"/>
+                    </code>
+                    <lotNumberText>p100271294</lotNumberText>
+                  </manufacturedMaterial>
+                  <manufacturerOrganization>
+                    <name>Guerrero-Ferrell</name>
+                  </manufacturerOrganization>
+                </manufacturedProduct>
+              </consumable>
+              <performer typeCode="PRF">
+                <assignedEntity classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <telecom nullFlavor="NI"/>
+                  <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                    <name>
+                      <given>Daniel</given>
+                      <given>Wesley</given>
+                      <family>Olson</family>
+                    </name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <author>
+                <time value="20210416090418"/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component typeCode="COMP" contextConductionInd="true">
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.7.1"/>
+          <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Procedures"/>
+          <title>Procedures</title>
+          <text><paragraph><content ID="NOPROCINFO">No data available for this section</content></paragraph></text>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <id root="4n56O33C-JE3L-2013-p478-725B9c1235sZ"/>
+              <code nullFlavor="NI">
+                <originalText>
+                  <reference value="#NOPROCINFO"/>
+                </originalText>
+              </code>
+              <statusCode code="completed"/>
+              <effectiveTime nullFlavor="NI"/>
+            </procedure>
+          </entry>
+        </section>
+      </component>
+      <component typeCode="COMP" contextConductionInd="true">
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social History"/>
+          <title>Social History</title>
+          <text><table border="1" width="95%"><colgroup><col width="25%"/><col width="75%"/></colgroup><thead><tr><th>Social History Type</th><th>Response</th></tr></thead><tbody><tr xmlns:d="urn:com-cerner-patient-ehr:v3"><td><content ID="CET17747990925">Smoking Status</content></td><td><content ID="CER17747990925"><content ID="CER17747990925.17178839">Former smoker</content></content></td></tr></tbody></table></text>
+          <entry typeCode="DRIV" contextConductionInd="true">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.78"/>
+              <id root="E63b529W-7451-5680-364g-W2F48b7u5ik9"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActCode"/>
+              <text><reference value="#CER17747990925"/></text>
+              <statusCode code="completed"/>
+              <effectiveTime nullFlavor="UNK"/>
+              <value xsi:type="CD" code="8517006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Ex-smoker (finding)">
+                <originalText>
+                  <reference value="#CER17747990925.17178839"/>
+                </originalText>
+                <translation code="B6A1E1F7-763E-4C55-AF25-E39401D67F2A" codeSystem="2.16.840.1.113883.3.13.2.1.1" codeSystemName="CERNER" displayName="Former smoker"/>
+              </value>
+              <author>
+                <time value="20220107095000"/>
+                <assignedAuthor>
+                  <id nullFlavor="NI"/>
+                  <addr nullFlavor="UNK">
+                    <streetAddressLine nullFlavor="NI"/>
+                    <city nullFlavor="NI"/>
+                    <country nullFlavor="NI"/>
+                  </addr>
+                  <assignedPerson>
+                    <name>
+                      <given nullFlavor="NA"/>
+                      <family nullFlavor="NA"/>
+                    </name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component typeCode="COMP" contextConductionInd="true">
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.14"/>
+          <code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional Status"/>
+          <title>Functional Status</title>
+          <text><paragraph>No data available for this section</paragraph></text>
+        </section>
+      </component>
+      <component typeCode="COMP" contextConductionInd="true">
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.41"/>
+          <code code="8653-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hospital Discharge Instructions"/>
+          <title>Hospital Discharge Instructions</title>
+          <text><content ID="SCRIPT.XR_CUST_DISCH_INFO_TITLE"/><content ID="SCRIPT.XR_CUST_FOLLOWUP_TXT"/><paragraph>No data available for this section</paragraph></text>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

@@ -1,0 +1,220 @@
+{
+  "generated_at": "2026-11-02T23:13:45+00:00",
+  "run": {
+    "ccda_files": 569,
+    "seconds": 33.5,
+    "row_counts": {
+      "silver.ccda_documents": 569,
+      "silver.ccda_medications": 12752,
+      "silver.ccda_problems": 8268,
+      "silver.claims_dx_lines": 2019,
+      "silver.claims_dx_diagnoses": 4672,
+      "silver.claims_rx": 541,
+      "gold.patient_summary": 24,
+      "gold.patient_medications": 1796,
+      "gold.patient_problems": 1146,
+      "gold.medication_records": 13251,
+      "gold.condition_records": 12888,
+      "gold.condition_concordance": 1556,
+      "gold.medication_concordance": 2022,
+      "gold.ref_ndc_rxnorm_learned": 324,
+      "gold.ref_snomed_icd10_learned": 504
+    },
+    "inputs": {
+      "ccda_dir": "C:\\Users\\Admin\\Downloads\\DE_Assessment-main\\ccda_files",
+      "dx_claims": "C:\\Users\\Admin\\Downloads\\DE_Assessment-main\\data_engineer_exam_claims_final.csv",
+      "rx_claims": "C:\\Users\\Admin\\Downloads\\DE_Assessment-main\\data_engineer_exam_rx_final.csv"
+    }
+  },
+  "checks": [
+    {
+      "check": "ccda_parse_failures",
+      "severity": "error",
+      "passed": true,
+      "metric": 0,
+      "detail": "0 of 569 documents failed to parse (quarantined, run continues)"
+    },
+    {
+      "check": "ccda_docs_without_med_or_problem_section",
+      "severity": "info",
+      "passed": true,
+      "metric": 0,
+      "detail": "documents with neither section (e.g. narrative-only notes)"
+    },
+    {
+      "check": "ccda_duplicate_document_ids",
+      "severity": "error",
+      "passed": true,
+      "metric": 0,
+      "detail": "patient_id+document_id must be unique"
+    },
+    {
+      "check": "patient_birth_date_consistent_across_documents",
+      "severity": "warn",
+      "passed": false,
+      "metric": 1,
+      "detail": "patients with >1 birth date across their C-CDAs: ['2w8e42im-c2g2-76e3-i5d4-86xn28060yz0']"
+    },
+    {
+      "check": "ccda_medication_placeholder_entries",
+      "severity": "info",
+      "passed": true,
+      "metric": 42,
+      "detail": "'No data available' / uncoded medication entries excluded from gold"
+    },
+    {
+      "check": "ccda_medication_without_name",
+      "severity": "warn",
+      "passed": true,
+      "metric": 36,
+      "detail": "medication entries with no resolvable name"
+    },
+    {
+      "check": "ccda_problem_placeholder_entries",
+      "severity": "info",
+      "passed": true,
+      "metric": 52,
+      "detail": "'No data available' / uncoded problem entries excluded from gold"
+    },
+    {
+      "check": "ccda_problem_without_name",
+      "severity": "warn",
+      "passed": true,
+      "metric": 8,
+      "detail": "problem entries with no resolvable name"
+    },
+    {
+      "check": "ccda_medication_rxnorm_coverage_document",
+      "severity": "info",
+      "passed": true,
+      "metric": 79.8,
+      "detail": "% usable medication entries with RxNorm in the document"
+    },
+    {
+      "check": "ccda_medication_rxnorm_coverage_after_vendor_crosswalk",
+      "severity": "info",
+      "passed": true,
+      "metric": 81.9,
+      "detail": "% usable medication entries with RxNorm after learning vendor-code (Multum/Medi-Span/FDB) pairs"
+    },
+    {
+      "check": "ccda_problem_icd10_coverage_document",
+      "severity": "info",
+      "passed": true,
+      "metric": 24.7,
+      "detail": "% usable problem entries with an ICD-10 translation in the document"
+    },
+    {
+      "check": "ccda_problem_icd10_coverage_after_crosswalk",
+      "severity": "info",
+      "passed": true,
+      "metric": 70.2,
+      "detail": "% usable problem entries with ICD-10 after same-patient + cross-patient SNOMED->ICD-10 learning"
+    },
+    {
+      "check": "snomed_icd10_ambiguous_mappings",
+      "severity": "info",
+      "passed": true,
+      "metric": 23,
+      "detail": "SNOMED codes translated inconsistently across patients; left unmapped"
+    },
+    {
+      "check": "ccda_ndc_unnormalisable",
+      "severity": "warn",
+      "passed": true,
+      "metric": 31,
+      "detail": "C-CDA NDC translations that are 10-digit/2-segment and therefore ambiguous; not joined"
+    },
+    {
+      "check": "rx_ndc_leading_zeros_restored",
+      "severity": "warn",
+      "passed": true,
+      "metric": 107,
+      "detail": "Rx claim NDCs shorter than 11 digits (leading zeros lost upstream, e.g. Excel); left-padded"
+    },
+    {
+      "check": "claims_srclob_excel_date_mangling",
+      "severity": "warn",
+      "passed": false,
+      "metric": 100.0,
+      "detail": "% of srcLOB values that look like Excel-converted dates ('9-Jan'); kept raw, use LOB instead"
+    },
+    {
+      "check": "dx_claim_line_key_unique",
+      "severity": "error",
+      "passed": true,
+      "metric": 0,
+      "detail": "ClaimID+LineNum is unique"
+    },
+    {
+      "check": "rx_claim_id_unique",
+      "severity": "error",
+      "passed": true,
+      "metric": 0,
+      "detail": "Rx ClaimID is unique"
+    },
+    {
+      "check": "dx_invalid_icd10_codes",
+      "severity": "warn",
+      "passed": true,
+      "metric": 0,
+      "detail": "claim diagnosis codes failing ICD-10 shape check"
+    },
+    {
+      "check": "dx_codes_without_icd10cm_description",
+      "severity": "info",
+      "passed": true,
+      "metric": 0,
+      "detail": "claim diagnoses not found in the bundled ICD-10-CM release (non-billable/retired codes)"
+    },
+    {
+      "check": "dx_from_date_parse",
+      "severity": "error",
+      "passed": true,
+      "metric": 0,
+      "detail": "unparseable from_date values"
+    },
+    {
+      "check": "dx_paid_date_parse",
+      "severity": "error",
+      "passed": true,
+      "metric": 0,
+      "detail": "unparseable paid_date values"
+    },
+    {
+      "check": "dx_paid_before_service",
+      "severity": "warn",
+      "passed": true,
+      "metric": 0,
+      "detail": "claim lines paid before service date"
+    },
+    {
+      "check": "negative_paid_amounts",
+      "severity": "info",
+      "passed": true,
+      "metric": 1,
+      "detail": "reversals/adjustments present"
+    },
+    {
+      "check": "patients_with_ccda_but_no_claims",
+      "severity": "warn",
+      "passed": true,
+      "metric": 0,
+      "detail": []
+    },
+    {
+      "check": "patients_with_claims_but_no_ccda",
+      "severity": "warn",
+      "passed": true,
+      "metric": 0,
+      "detail": []
+    },
+    {
+      "check": "rx_claims_resolved_to_rxnorm_via_learned_crosswalk",
+      "severity": "info",
+      "passed": true,
+      "metric": 8.7,
+      "detail": "% of pharmacy fills whose NDC could be mapped to RxNorm using only crosswalk pairs observed in the C-CDAs"
+    }
+  ]
+}
